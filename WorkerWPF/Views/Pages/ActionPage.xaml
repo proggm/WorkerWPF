@@ -1,0 +1,37 @@
+﻿<Page x:Class="WorkerWPF.Views.Pages.ActionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WorkerWPF.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ActionPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="ID"/>
+            <TextBox  Width="200" Text="{Binding Information.ID}"/>
+            <TextBlock Text="FirstName"/>
+            <TextBox  Width="200" Text="{Binding Information.FirstName}"/>
+            <TextBlock Text="LastName"/>
+            <TextBox  Width="200" Text="{Binding Information.LastName}"/>
+            <TextBlock Text="Patronymic"/>
+            <TextBox  Width="200" Text="{Binding Information.Patronymic}"/>
+            <TextBlock Text="Post"/>
+            <TextBox  Width="200" Text="{Binding Information.Post}"/>
+            <TextBlock Text="Rank"/>
+            <TextBox  Width="200" Text="{Binding Information.Rank}"/>
+            <TextBlock Text="City"/>
+            <TextBox  Width="200" Text="{Binding Information.City}"/>
+            <TextBlock Text="WorkPhone"/>
+            <TextBox  Width="200" Text="{Binding Information.WorkPhone}"/>
+            <TextBlock Text="DateofBirth"/>
+            <DatePicker Width="200" SelectedDate="{Binding Information.DateofBirth}"/>
+            <TextBlock Text="Gender"/>
+            <TextBox  Width="200" Text="{Binding Information.Gender}"/>
+            <Button Content="Save" Margin="0,10,0,0" Click="Button_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
